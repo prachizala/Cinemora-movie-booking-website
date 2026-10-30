@@ -2150,3 +2150,170 @@ img, svg {
   .cinema-boarding-pass, .cinema-boarding-pass * { visibility: visible; }
   .cinema-boarding-pass { position: absolute; left: 0; top: 0; width: 100%; box-shadow: none; }
 }
+
+/* 19. CINEBOT AI FLOATING WIDGET */
+.cinebot-floating-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cinebot-trigger-btn {
+  background: var(--gold-gradient);
+  color: #1F1B16;
+  border: none;
+  border-radius: 50px;
+  padding: 0.75rem 1.3rem;
+  font-weight: 800;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  box-shadow: 0 8px 25px rgba(201, 162, 39, 0.4);
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.cinebot-trigger-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(201, 162, 39, 0.6);
+}
+
+.cinebot-window {
+  width: 360px;
+  height: 500px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cinebot-window.open {
+  display: flex;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cinebot-header {
+  background: #1A1612;
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--gold);
+}
+
+.cinebot-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(201, 162, 39, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.cinebot-close-btn {
+  background: transparent;
+  border: none;
+  color: #FFF;
+  font-size: 1.1rem;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.cinebot-close-btn:hover {
+  opacity: 1;
+}
+
+.cinebot-messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background: var(--surface-2);
+}
+
+.chat-msg {
+  max-width: 85%;
+  padding: 0.75rem 0.95rem;
+  border-radius: var(--radius-md);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.bot-msg {
+  align-self: flex-start;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-bottom-left-radius: 2px;
+}
+
+.user-msg {
+  align-self: flex-end;
+  background: var(--gold-gradient);
+  color: #1F1B16;
+  font-weight: 600;
+  border-bottom-right-radius: 2px;
+}
+
+.cinebot-chips {
+  padding: 0.5rem 0.8rem;
+  background: var(--surface);
+  display: flex;
+  gap: 0.4rem;
+  overflow-x: auto;
+  border-top: 1px solid var(--border);
+}
+
+.bot-chip {
+  white-space: nowrap;
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 0.35rem 0.7rem;
+  border-radius: 20px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.bot-chip:hover {
+  background: var(--gold-soft);
+  color: var(--gold-dark);
+}
+
+.cinebot-input-bar {
+  padding: 0.8rem 1rem;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* AI Sentiment Box on Movie Details */
+.ai-sentiment-badge {
+  background: linear-gradient(135deg, rgba(201, 162, 39, 0.12), rgba(59, 111, 216, 0.12));
+  border: 1px solid var(--gold);
+  border-radius: var(--radius-md);
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+}
+

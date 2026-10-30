@@ -314,6 +314,49 @@
   <!-- 5. FLOATING TOAST NOTIFICATIONS CONTAINER -->
   <div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
+  <!-- 6. CINEBOT AI ASSISTANT WIDGET -->
+  <div class="cinebot-floating-container" id="cinebotContainer">
+    <!-- Chat Window -->
+    <div class="cinebot-window" id="cinebotWindow">
+      <div class="cinebot-header">
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <div class="cinebot-avatar">🤖</div>
+          <div>
+            <div style="font-weight: 800; font-size: 0.95rem; color: #FFF;">CineBot Luxury Concierge</div>
+            <div style="font-size: 0.72rem; color: #2E9E6A; display: flex; align-items: center; gap: 4px;">
+              <span style="width: 7px; height: 7px; background: #2E9E6A; border-radius: 50%; display: inline-block;"></span> Online • AI Assistant
+            </div>
+          </div>
+        </div>
+        <button class="cinebot-close-btn" onclick="CinemoraApp.toggleCinebot()" aria-label="Close Chat">✕</button>
+      </div>
+
+      <div class="cinebot-messages" id="cinebotMessages">
+        <div class="chat-msg bot-msg">
+          Hello! I am <strong>CineBot</strong>, your luxury cinema assistant. 🎬✨<br><br>
+          Ask me about current trending Indian movies, showtimes in your city, best couple seats, or active discount codes!
+        </div>
+      </div>
+
+      <div class="cinebot-chips" id="cinebotChips">
+        <button class="bot-chip" onclick="CinemoraApp.sendBotMessage('What is trending today?')">🔥 Trending Now</button>
+        <button class="bot-chip" onclick="CinemoraApp.sendBotMessage('Best seats for couples')">🛋️ Couple Seats</button>
+        <button class="bot-chip" onclick="CinemoraApp.sendBotMessage('Show available offers')">🎟️ Bank Offers</button>
+      </div>
+
+      <div class="cinebot-input-bar">
+        <input type="text" id="cinebotInput" class="form-control" placeholder="Ask about movies, seats or timings..." onkeypress="if(event.key==='Enter') CinemoraApp.submitBotChat()">
+        <button class="btn btn-primary btn-sm" onclick="CinemoraApp.submitBotChat()" style="padding: 0.5rem 0.9rem;">Send</button>
+      </div>
+    </div>
+
+    <!-- Floating Toggle Button -->
+    <button class="cinebot-trigger-btn" id="cinebotTrigger" onclick="CinemoraApp.toggleCinebot()" aria-label="Open CineBot Chat">
+      <span style="font-size: 1.4rem;">🤖</span>
+      <span class="cinebot-label">Ask CineBot</span>
+    </button>
+  </div>
+
   <!-- Scripts -->
   <script src="data.js"></script>
   <script src="script.js"></script>

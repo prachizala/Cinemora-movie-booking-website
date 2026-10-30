@@ -1,0 +1,786 @@
+{
+  "movies": [
+    {
+      "id": "tmdb-1058424",
+      "tmdbId": 1058424,
+      "title": "Hope",
+      "originalTitle": "호프",
+      "language": "Hindi",
+      "genres": [
+        "Sci-Fi",
+        "Mystery",
+        "Action"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-10-23",
+      "criticRating": 6.8,
+      "publicRating": 7.1,
+      "reviewCount": "394 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/qqHFLg90IUSoTmSMpKOOW5RyqN3.jpg",
+      "tagline": "In the remote South Korean village of Hope Harbor, police ch...",
+      "synopsis": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": true,
+      "isPopular": false,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-1400940",
+      "tmdbId": 1400940,
+      "title": "Clayface",
+      "originalTitle": "Clayface",
+      "language": "English",
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Sci-Fi"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-10-23",
+      "criticRating": 7.5,
+      "publicRating": 7.8,
+      "reviewCount": "284 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9l1NuFjel2j89hiuiJbsxfblqjy.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
+      "tagline": "Matt Hagen's meteoric rise from Gotham street kid to Hollywo...",
+      "synopsis": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": true,
+      "isPopular": false,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-1283515",
+      "tmdbId": 1283515,
+      "title": "Verity",
+      "originalTitle": "Verity",
+      "language": "English",
+      "genres": [
+        "Mystery",
+        "Thriller"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-10-02",
+      "criticRating": 6.5,
+      "publicRating": 6.8,
+      "reviewCount": "345 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rmaNMA1seHqpjtnYKzyynFAr1g8.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/cKetrF2dAnQ0AMV5i4BMOs41I5P.jpg",
+      "tagline": "Lowen Ashleigh, hired to ghostwrite for best-selling author ...",
+      "synopsis": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": true,
+      "isPopular": false,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-1465063",
+      "tmdbId": 1465063,
+      "title": "Forgotten Island",
+      "originalTitle": "Forgotten Island",
+      "language": "English",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Fantasy"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-09-25",
+      "criticRating": 7.6,
+      "publicRating": 7.9,
+      "reviewCount": "141 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/myd1K3gefdNAWFsGNRDdMeiK9Qg.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
+      "tagline": "While celebrating their last night together, high school gra...",
+      "synopsis": "While celebrating their last night together, high school graduates and best friends Jo and Raissa stumble upon a mysterious portal that transports them to the fantastical island of Nakali. When they discover that the memories of their entire friendship are the price for returning home, Jo and Raissa must race to find a way to leave the island before they forget each other forever.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": true,
+      "isPopular": false,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-1153576",
+      "tmdbId": 1153576,
+      "title": "Street Fighter",
+      "originalTitle": "Street Fighter",
+      "language": "English",
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-10-16",
+      "criticRating": 6.3,
+      "publicRating": 6.6,
+      "reviewCount": "200 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ccxdepKqORLwccbzvO4eAGkN0IC.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
+      "tagline": "In 1993, estranged Street Fighters Ryu and Ken Masters are t...",
+      "synopsis": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": true,
+      "isPopular": false,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-1377237",
+      "tmdbId": 1377237,
+      "title": "Runner",
+      "originalTitle": "Runner",
+      "language": "English",
+      "genres": [
+        "Action",
+        "Comedy"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-09-25",
+      "criticRating": 8.3,
+      "publicRating": 8.6,
+      "reviewCount": "761 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vJk2TW1QZAmBiD7oj9ZF9EPTYY1.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/npXZNWjOEYrqdMDPQ11SGBrXqAG.jpg",
+      "tagline": "A former soldier is thrown into a brutal race against time w...",
+      "synopsis": "A former soldier is thrown into a brutal race against time when a critical medical delivery makes him and his unlikely partner the targets of a ruthless cartel. As the mission spirals into a deadly manhunt, every detour, delay, and bullet pushes them closer to failure. With betrayal closing in from every side, they must survive the chase and deliver their cargo to save the life of a little girl.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": false,
+      "isPopular": true,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-1263337",
+      "tmdbId": 1263337,
+      "title": "Heart of the Beast",
+      "originalTitle": "Heart of the Beast",
+      "language": "English",
+      "genres": [
+        "Adventure",
+        "Thriller"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-09-25",
+      "criticRating": 7.3,
+      "publicRating": 7.6,
+      "reviewCount": "365 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
+      "tagline": "After a harrowing plane crash, Special Forces officer James ...",
+      "synopsis": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": false,
+      "isPopular": true,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-1248832",
+      "tmdbId": 1248832,
+      "title": "Digger",
+      "originalTitle": "Digger",
+      "language": "English",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-10-01",
+      "criticRating": 7.5,
+      "publicRating": 7.8,
+      "reviewCount": "487 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/vC5IxhgO6cVmw9O4QgkraRzfHvh.jpg",
+      "tagline": "The most powerful man in the world embarks on a frantic miss...",
+      "synopsis": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": false,
+      "isPopular": true,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-299534",
+      "tmdbId": 299534,
+      "title": "Avengers: Endgame",
+      "originalTitle": "Avengers: Endgame",
+      "language": "English",
+      "genres": [
+        "Adventure",
+        "Sci-Fi",
+        "Action"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2019,
+      "releaseDate": "2019-04-26",
+      "criticRating": 8.2,
+      "publicRating": 8.5,
+      "reviewCount": "29166 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bR8ISy1O9XQxqiy0fQFw2BX72RQ.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+      "tagline": "After the devastating events of Avengers: Infinity War, the ...",
+      "synopsis": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": false,
+      "isPopular": true,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-1375441",
+      "tmdbId": 1375441,
+      "title": "Primetime",
+      "originalTitle": "Primetime",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-09-25",
+      "criticRating": 6.8,
+      "publicRating": 7.1,
+      "reviewCount": "250 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lmrulvLbmaejTix1YaMxo1oGhH1.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
+      "tagline": "In 2006, To Catch a Predator host Chris Hansen sets out to m...",
+      "synopsis": "In 2006, To Catch a Predator host Chris Hansen sets out to make television history. When a high stakes operation goes fatally wrong, his veneered dream of fame curdles into a nightmare of performative justice.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": false,
+      "isPopular": true,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-1281331",
+      "tmdbId": 1281331,
+      "title": "The Social Reckoning",
+      "originalTitle": "The Social Reckoning",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-10-09",
+      "criticRating": 7,
+      "publicRating": 7.3,
+      "reviewCount": "133 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7jK6NuxVg1XuEV7UdNa6KO03IgZ.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
+      "tagline": "Frances Haugen, a young Facebook engineer, enlists the help ...",
+      "synopsis": "Frances Haugen, a young Facebook engineer, enlists the help of Jeff Horwitz, a Wall Street Journal reporter, to go on a dangerous journey that ends up blowing the whistle on the social network's most guarded secrets.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": false,
+      "isPopular": false,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-1515692",
+      "tmdbId": 1515692,
+      "title": "Baththa",
+      "originalTitle": "பத்தா",
+      "language": "Tamil",
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Action"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-10-01",
+      "criticRating": 8.5,
+      "publicRating": 8.8,
+      "reviewCount": "6 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cWY636zXGECkRHbrqhQdFyP9n69.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/5sBnZMT1aJ6cBvehKOzOOLdI6bz.jpg",
+      "tagline": "In 1986 Madras, a timid eight-year-old boy accidentally trap...",
+      "synopsis": "In 1986 Madras, a timid eight-year-old boy accidentally traps a feared gangster inside a deserted school toilet. As the gangster is forced to confront hunger, loneliness and his own vulnerability, an unlikely bond begins to grow between the two, changing their lives forever.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": false,
+      "isPopular": false,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-1234139",
+      "tmdbId": 1234139,
+      "title": "Jailer 2",
+      "originalTitle": "ஜெயிலர் 2",
+      "language": "Tamil",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-10-15",
+      "criticRating": 8.1,
+      "publicRating": 8.4,
+      "reviewCount": "19 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/upwdEyhhYZ7pT2hD535fr2MGfpx.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/zpHTOdRl7GEPqFsDGqsN6Hi9Ylt.jpg",
+      "tagline": "When a dangerous syndicate expands its reach to threaten his...",
+      "synopsis": "When a dangerous syndicate expands its reach to threaten his family's peace, retired jailer Tiger Muthuvel Pandian goes undercover as a driver. Operating from the shadows, he takes on ruthless new enemies to protect his home.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": false,
+      "isPopular": false,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-1376856",
+      "tmdbId": 1376856,
+      "title": "The Paradise",
+      "originalTitle": "ది ప్యారడైజ్",
+      "language": "Telugu",
+      "genres": [
+        "Action",
+        "Drama"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-09-23",
+      "criticRating": 4.9,
+      "publicRating": 5.2,
+      "reviewCount": "14 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/smghVMoMWSIFi5dgIz4w1UIcEcY.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/7AcH5TFppoMusNkCBLaQP6UOODp.jpg",
+      "tagline": "In 1980s Secunderabad, a marginalized tribe battles discrimi...",
+      "synopsis": "In 1980s Secunderabad, a marginalized tribe battles discrimination and fights for citizenship under an unexpected leader's guidance, challenging systemic oppression.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": false,
+      "isPopular": false,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-1389379",
+      "tmdbId": 1389379,
+      "title": "Ranabaali",
+      "originalTitle": "రణబాలి",
+      "language": "Telugu",
+      "genres": [
+        "History",
+        "Action",
+        "Drama"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-10-16",
+      "criticRating": 4,
+      "publicRating": 4.3,
+      "reviewCount": "2 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cXaCyYYbafVyMrs8rwKmxezBYPJ.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/xpImgnsxuqb3VOp0QRtXTS5uBRi.jpg",
+      "tagline": "Set in 19th-century British India, a fierce leader rises fro...",
+      "synopsis": "Set in 19th-century British India, a fierce leader rises from a drought-stricken land to fight colonial oppression and atrocities.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": false,
+      "isPopular": false,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    },
+    {
+      "id": "tmdb-1375156",
+      "tmdbId": 1375156,
+      "title": "Udta Teer",
+      "originalTitle": "उड़ता तीर",
+      "language": "Hindi",
+      "genres": [
+        "Comedy",
+        "Action"
+      ],
+      "duration": "2h 35m",
+      "certification": "UA 16+",
+      "releaseYear": 2026,
+      "releaseDate": "2026-10-23",
+      "criticRating": 6.6,
+      "publicRating": 6.9,
+      "reviewCount": "4 reviews",
+      "posterPath": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tvICKypVlW7Iio4KVs7NousbSKi.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/ncVecUcDZe1EOWtHaU2f8BFvbx4.jpg",
+      "tagline": "An amnesiac Pakistani spy wakes up believing he is a patriot...",
+      "synopsis": "An amnesiac Pakistani spy wakes up believing he is a patriotic Indian counter-terrorism officer.",
+      "director": "Acclaimed Indian Filmmaker",
+      "cast": [
+        {
+          "name": "Lead Actor",
+          "role": "Protagonist"
+        },
+        {
+          "name": "Co-Star",
+          "role": "Crucial Role"
+        },
+        {
+          "name": "Supporting Star",
+          "role": "Key Character"
+        }
+      ],
+      "isTrending": false,
+      "isPopular": false,
+      "formats": [
+        "IMAX Laser 3D",
+        "4DX",
+        "Dolby Atmos",
+        "Director Suite"
+      ]
+    }
+  ],
+  "cinemas": [
+    {
+      "id": "cin-01",
+      "name": "Cinemora Royale Lounge & IMAX",
+      "city": "ahmedabad",
+      "locality": "Sindhu Bhavan Road, Bodakdev",
+      "screens": 6,
+      "rating": 4.9
+    },
+    {
+      "id": "cin-02",
+      "name": "Cinemora Onyx LED & Director Cut",
+      "city": "ahmedabad",
+      "locality": "Palladium Mall, Thaltej",
+      "screens": 5,
+      "rating": 4.8
+    },
+    {
+      "id": "cin-03",
+      "name": "Cinemora Luxe Atmos",
+      "city": "mumbai",
+      "locality": "Bandra Kurla Complex (BKC)",
+      "screens": 8,
+      "rating": 4.9
+    },
+    {
+      "id": "cin-04",
+      "name": "Cinemora Grand Palais",
+      "city": "delhi",
+      "locality": "Connaught Place",
+      "screens": 7,
+      "rating": 4.9
+    }
+  ],
+  "shows": [],
+  "bookings": [],
+  "users": [
+    {
+      "id": "usr-1",
+      "name": "Vikramaditya Oberoi",
+      "email": "vikram.oberoi@cinemora.demo",
+      "tier": "royale",
+      "points": 1250
+    },
+    {
+      "id": "usr-2",
+      "name": "Pooja Mehta",
+      "email": "pooja.mehta@example.com",
+      "tier": "silver",
+      "points": 120
+    }
+  ],
+  "occupiedSeats": {},
+  "reviews": [],
+  "offers": []
+}

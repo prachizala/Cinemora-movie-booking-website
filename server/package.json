@@ -1,0 +1,16 @@
+{
+  "name": "cinemora-backend",
+  "version": "1.0.0",
+  "description": "Cinemora Luxury Cinema Fullstack API with TMDB Live Ingestion, JSON Database & CineBot AI Assistant",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7"
+  }
+}

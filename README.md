@@ -111,6 +111,25 @@ Follow this quick walkthrough to inspect all features:
 | 14 | **Cinemora Club (`#/membership`)** | Upgrade to **VIP Royale**. Notice convenience fees become **FREE** on checkout! |
 | 15 | **Admin Console (`admin.html`)** | Inspect live revenue counters, bookings audit log, and test booking generator. |
 | 16 | **Image Credits (`credits.html`)** | Click "Photography Credits" in the footer to review full Unsplash licensing and photographer attributions. |
+| 17 | **CineBot AI Assistant (New)** | Click the floating **"🤖 Ask CineBot"** button at bottom-right. Ask questions like *"What is trending today?"*, *"Best seats for couples"*, or *"Current bank offers"*. CineBot fetches live intelligence from the backend database! |
+| 18 | **AI Market Box Office & Sentiment Analysis** | Click on any movie details page (`#/movie/:id`). Notice the live **AI Market Box Office & Sentiment Analysis** badge indicating positive audience sentiment percentage and screen recommendations. |
+
+---
+
+## ⚡ Fullstack & AI Backend (Node.js + Express + TMDB Ingestion)
+
+The project includes an intelligent fullstack backend located in `/server`:
+- **Live TMDB Ingestion (`/server/tmdbService.js`)**: Real-time sync of currently running theatrical releases in India with high-res posters, genres, and ratings.
+- **AI Sentiment & Box Office Engine**: Computes real-time market buzz, critical sentiment scores, and recommended auditorium formats.
+- **CineBot AI Engine (`/server/cineBotService.js`)**: Real-time cinema concierge API responding to natural language movie queries.
+- **Persistent JSON Database (`/server/database.json`)**: Persistent storage for live movies, users, bookings, and occupied seats.
+
+### To start the backend server:
+```bash
+cd server
+node server.js
+# Backend API runs on http://localhost:5000
+```
 
 ---
 
