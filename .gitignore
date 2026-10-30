@@ -1,0 +1,20 @@
+# Dependency directories
+node_modules/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables & local configs
+.env
+.env.local
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
