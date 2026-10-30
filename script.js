@@ -1988,7 +1988,7 @@
       showToast(`Selected ${bank} for Net Banking (Simulated)`, 'info');
     },
 
-    confirmBookingPayment(totalPaid) {
+    async confirmBookingPayment(totalPaid) {
       const draft = AppState.currentBookingDraft;
       const bookingId = 'CNM-' + Date.now().toString().slice(-6);
 
@@ -2016,6 +2016,21 @@
       occupiedMap[draft.showId] = currentOccupied;
       saveState(STORAGE_KEYS.OCCUPIED, occupiedMap);
 
+      try {
+        await fetch(`${API_BASE_URL}/bookings/reserve`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            showId: draft.showId,
+            movieId: draft.movie.id,
+            movieTitle: draft.movie.title,
+            cinemaName: draft.cinema.name,
+            seats: draft.seats,
+            totalPaid: totalPaid,
+            user: AppState.user
+          })
+        });
+      } catch (err) {}
       showToast('Payment successful! Generating your ticket...', 'success');
       setTimeout(() => {
         window.location.hash = `#/ticket/${bookingId}`;
