@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CINEMORA - Admin & Operations Console (Demo Management)</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <style>
+    .admin-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .admin-stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .admin-stat-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 4px; height: 100%;
+      background: var(--gold-gradient);
+    }
+    .admin-stat-val {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--gold-dark);
+      margin: 0.4rem 0 0.2rem;
+    }
+    .admin-stat-lbl {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .admin-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.88rem;
+    }
+    .admin-table th, .admin-table td {
+      padding: 0.85rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .admin-table th {
+      color: var(--gold-dark);
+      font-weight: 700;
+      background: var(--surface-2);
+    }
+    .admin-table tr:hover {
+      background: var(--surface-2);
+    }
+  </style>
+</head>
+<body style="background: var(--bg); color: var(--text);">
+
+  <!-- Admin Top Bar -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="brand-logo-wrap">
+        <a href="index.html">
+          <img src="assets/logo.svg" alt="CINEMORA" class="brand-logo-img">
+        </a>
+        <span class="badge-demo" style="margin-left: 0.5rem;">Operations Console</span>
+      </div>
+
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-secondary btn-sm">
+          ← Back to Main Website
+        </a>
+        <button class="btn btn-danger btn-sm" onclick="resetDemoData()">
+          Reset Demo Data
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Admin Dashboard Container -->
+  <main class="container" style="padding: 3rem 1.5rem 6rem;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        <span class="badge-demo">Cinemora Box Office & Audit Suite</span>
+        <h1 style="font-size: 2.2rem; margin-top: 0.4rem; color: var(--text);">Live Operations Dashboard</h1>
+        <p style="color: var(--text-muted);">Real-time monitoring of LocalStorage bookings, revenue, and active screenings.</p>
+      </div>
+      <div>
+        <button class="btn btn-primary btn-sm" onclick="seedSampleBooking()">
+          + Generate Test Booking
+        </button>
+      </div>
+    </div>
+
+    <!-- KPI Metric Cards -->
+    <div class="admin-stats-grid">
+      <div class="admin-stat-card">
+        <span class="admin-stat-lbl">Simulated Bookings</span>
+        <div class="admin-stat-val" id="statBookingsCount">0</div>
+        <small style="color: var(--text-muted);">Stored in browser LocalStorage</small>
+      </div>
+
+      <div class="admin-stat-card">
+        <span class="admin-stat-lbl">Simulated Revenue</span>
+        <div class="admin-stat-val" id="statTotalRevenue">₹0</div>
+        <small style="color: var(--green); font-weight:700;">100% demo ticket revenue</small>
+      </div>
+
+      <div class="admin-stat-card">
+        <span class="admin-stat-lbl">Active Fictional Movies</span>
+        <div class="admin-stat-val" id="statMoviesCount">14</div>
+        <small style="color: var(--text-muted);">Multi-lingual productions</small>
+      </div>
+
+      <div class="admin-stat-card">
+        <span class="admin-stat-lbl">Partner Theatres</span>
+        <div class="admin-stat-val" style="color: var(--gold-dark);">24</div>
+        <small style="color: var(--text-muted);">Across 20 Indian cities</small>
+      </div>
+    </div>
+
+    <!-- Active Reservations Table -->
+    <div class="checkout-card" style="margin-bottom: 3rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h3 class="checkout-card-title" style="margin-bottom: 0;">🎟️ Recent Ticket Bookings (LocalStorage)</h3>
+        <span style="font-size: 0.8rem; color: var(--text-muted);" id="tableCountLabel">Showing all records</span>
+      </div>
+
+      <div style="overflow-x: auto;">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Booking Ref</th>
+              <th>Movie Title</th>
+              <th>Cinema & City</th>
+              <th>Seats Booked</th>
+              <th>Total Paid</th>
+              <th>Date / Time</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="bookingsTableBody">
+            <!-- Populated via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Seat Pricing & Category Structure Table -->
+    <div class="checkout-card">
+      <h3 class="checkout-card-title">💺 Configured Seat Tiers & Base Tariffs</h3>
+      <div style="overflow-x: auto;">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Display Name</th>
+              <th>Base Tariff</th>
+              <th>Capacity</th>
+              <th>Photo / Preview</th>
+              <th>Special Comfort Features</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="badge-tag">STD</span></td>
+              <td><strong>Silver Class Standard</strong></td>
+              <td style="color: var(--gold-dark); font-weight: 700;">₹220</td>
+              <td>1 Person</td>
+              <td>Standard Chair Icon</td>
+              <td>Plush cinema upholstery, wide sightlines</td>
+            </tr>
+            <tr>
+              <td><span class="badge-tag" style="background:rgba(59,111,216,0.15); color:var(--blue);">PREM</span></td>
+              <td><strong>Prime Blue Lounge</strong></td>
+              <td style="color: var(--gold-dark); font-weight: 700;">₹380</td>
+              <td>1 Person</td>
+              <td>Wider Blue Chair</td>
+              <td>Ergonomic sweet-spot acoustics, personal cupholder</td>
+            </tr>
+            <tr>
+              <td><span class="badge-tag" style="background:rgba(123,79,209,0.15); color:var(--purple);">REC</span></td>
+              <td><strong>VIP Royale Recliner</strong></td>
+              <td style="color: var(--gold-dark); font-weight: 700;">₹650</td>
+              <td>1 Person</td>
+              <td><img src="assets/img/recliner.jpg" style="width:48px; height:32px; border-radius:4px; object-fit:cover;"></td>
+              <td>180° Motorized recline, extended footrest, side swivel tray</td>
+            </tr>
+            <tr>
+              <td><span class="badge-tag" style="background:rgba(215,38,61,0.15); color:var(--red);">SOFA</span></td>
+              <td><strong>Royal Couple Sofa</strong></td>
+              <td style="color: var(--gold-dark); font-weight: 700;">₹1,200 (Unit)</td>
+              <td>2 Persons</td>
+              <td><img src="assets/img/sofa-seats.jpg" style="width:48px; height:32px; border-radius:4px; object-fit:cover;"></td>
+              <td>Double love-seat cushions, shared gourmet console, private lounge</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="data.js"></script>
+  <script>
+    function refreshAdminData() {
+      const bookings = JSON.parse(localStorage.getItem('cinemora_bookings')) || [];
+      const totalRev = bookings.reduce((sum, b) => sum + (b.totalPaid || 0), 0);
+
+      document.getElementById('statBookingsCount').textContent = bookings.length;
+      document.getElementById('statTotalRevenue').textContent = '₹' + Math.round(totalRev).toLocaleString('en-IN');
+      document.getElementById('statMoviesCount').textContent = CINEMORA_DATA.movies.length;
+
+      const tbody = document.getElementById('bookingsTableBody');
+      if (bookings.length === 0) {
+        tbody.innerHTML = `
+          <tr>
+            <td colspan="8" style="text-align: center; color: var(--text-muted); padding: 2rem;">
+              No simulated bookings recorded yet. Use the main website or click "+ Generate Test Booking" above.
+            </td>
+          </tr>
+        `;
+      } else {
+        tbody.innerHTML = bookings.map(b => `
+          <tr>
+            <td><strong>#${b.id}</strong></td>
+            <td>${b.movieTitle}</td>
+            <td>${b.cinemaName}</td>
+            <td><span class="badge-tag">${b.seatLabels ? b.seatLabels.join(', ') : 'Seats'}</span></td>
+            <td style="font-weight: 700; color: var(--gold-dark);">₹${(b.totalPaid || 0).toLocaleString('en-IN')}</td>
+            <td>${b.date} • ${b.time}</td>
+            <td><span class="badge-demo" style="background: rgba(46,158,106,0.15); color: var(--green); border-color: rgba(46,158,106,0.3);">CONFIRMED</span></td>
+            <td>
+              <a href="index.html#/ticket/${b.id}" class="btn btn-secondary btn-sm" style="padding: 0.3rem 0.6rem; font-size: 0.75rem;">
+                View Pass
+              </a>
+            </td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    function seedSampleBooking() {
+      const bookings = JSON.parse(localStorage.getItem('cinemora_bookings')) || [];
+      const randomMovie = CINEMORA_DATA.movies[Math.floor(Math.random() * CINEMORA_DATA.movies.length)];
+      const randomCinema = CINEMORA_DATA.cinemas[0];
+      const newBooking = {
+        id: 'CNM-' + Math.floor(100000 + Math.random() * 900000),
+        movieId: randomMovie.id,
+        movieTitle: randomMovie.title,
+        cinemaName: randomCinema.name,
+        date: 'Today',
+        time: '07:45 PM',
+        format: 'IMAX 3D',
+        seatLabels: ['G4', 'G5'],
+        totalPaid: 1534,
+        userName: 'Aryan Sharma',
+        bookingTime: new Date().toISOString(),
+        status: 'CONFIRMED'
+      };
+
+      bookings.unshift(newBooking);
+      localStorage.setItem('cinemora_bookings', JSON.stringify(bookings));
+      refreshAdminData();
+      alert('Simulated booking created! View in the table below or on index.html.');
+    }
+
+    function resetDemoData() {
+      if (confirm('Are you sure you want to reset demo bookings and occupancy data?')) {
+        localStorage.removeItem('cinemora_bookings');
+        localStorage.removeItem('cinemora_occupied_seats');
+        refreshAdminData();
+        alert('Demo bookings and seat occupancy reset successfully.');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', refreshAdminData);
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!-- Poster 11: Chhatrapati - Battle of Sahyadri -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" fill="none">
+  <defs>
+    <linearGradient id="bgMaratha" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#431407" />
+      <stop offset="50%" stop-color="#2D0A03" />
+      <stop offset="100%" stop-color="#0F0301" />
+    </linearGradient>
+    <linearGradient id="saffronGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F97316" />
+      <stop offset="50%" stop-color="#EA580C" />
+      <stop offset="100%" stop-color="#C2410C" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="450" fill="url(#bgMaratha)" />
+
+  <!-- Sahyadri Fort Ramparts & Saffron Flag (Bhagwa Jhanda) Silhouette -->
+  <!-- Mountain Fort (Raigad / Sinhagad style) -->
+  <polygon points="0,260 70,180 130,220 200,160 300,240 300,450 0,450" fill="#1C0602" />
+  
+  <!-- Fort Bastions (Burj) -->
+  <rect x="180" y="145" width="35" height="30" fill="#2E0E05" stroke="#78350F" />
+  <polygon points="180,145 197,130 215,145" fill="#451A03" />
+
+  <!-- Saffron Swallow-tailed Flag (Bhagwa Dhwaj) flying high -->
+  <line x1="197" y1="130" x2="197" y2="70" stroke="#78350F" stroke-width="2.5" />
+  <path d="M 197 70 L 255 85 L 235 98 L 260 112 L 197 115 Z" fill="url(#saffronGrad)" filter="drop-shadow(0 0 10px #EA580C)" />
+
+  <!-- Maratha Curved Talwar Sword Silhouette -->
+  <path d="M 80 130 Q 130 90 170 120" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round" fill="none" filter="drop-shadow(0 0 8px #FFF)" />
+  <circle cx="80" cy="130" r="5" fill="#FBBF24" />
+
+  <!-- Sun rising behind the Sahyadri ranges -->
+  <circle cx="150" cy="110" r="55" fill="#F97316" opacity="0.3" filter="blur(15px)" />
+
+  <!-- Badge -->
+  <rect x="15" y="15" width="55" height="20" rx="4" fill="#C2410C" />
+  <text x="42" y="29" fill="#FFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" text-anchor="middle">MARATHI</text>
+
+  <!-- Title & Typography -->
+  <text x="150" y="336" fill="url(#saffronGrad)" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="900" letter-spacing="3" text-anchor="middle">CHHATRAPATI</text>
+  <text x="150" y="362" fill="#FED7AA" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" letter-spacing="4" text-anchor="middle">BATTLE OF SAHYADRI</text>
+  <line x1="50" y1="380" x2="250" y2="380" stroke="#EA580C" stroke-width="1.2" opacity="0.6" />
+  <text x="150" y="402" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" letter-spacing="2" text-anchor="middle">MARATHI • HINDI • HISTORICAL</text>
+  <text x="150" y="425" fill="#FBBF24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">★ 9.7 MONUMENTAL TRIUMPH</text>
+</svg>

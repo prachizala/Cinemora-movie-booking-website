@@ -1,0 +1,43 @@
+<!-- Poster 7: KGF - Gold Coast Chronicles -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" fill="none">
+  <defs>
+    <linearGradient id="bgKGF" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D1A02" />
+      <stop offset="50%" stop-color="#140B00" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+    <linearGradient id="solidGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="50%" stop-color="#EAB308" />
+      <stop offset="100%" stop-color="#854D0E" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="450" fill="url(#bgKGF)" />
+
+  <!-- Gold Mine Heavy Machinery & Sledgehammer Silhouette -->
+  <g transform="translate(150, 160)">
+    <!-- Gold Dust Blast Glow -->
+    <circle cx="0" cy="-20" r="85" fill="#EAB308" opacity="0.3" filter="blur(10px)" />
+    <!-- Giant Sledgehammer -->
+    <rect x="-35" y="-60" width="70" height="30" rx="4" fill="#E2E8F0" stroke="#854D0E" stroke-width="2" />
+    <rect x="-6" y="-30" width="12" height="110" rx="3" fill="#A16207" stroke="#713F12" stroke-width="1.5" />
+    <!-- Gold Nuggets flying -->
+    <polygon points="-50,-30 -42,-40 -35,-32 -42,-22" fill="#FDE047" />
+    <polygon points="50,-40 62,-50 68,-38 56,-32" fill="#FDE047" />
+    <polygon points="35,10 44,4 48,15 38,20" fill="#FDE047" />
+  </g>
+
+  <!-- Industrial Mining Pit Silhouette -->
+  <polygon points="0,280 60,250 120,290 180,260 250,295 300,270 300,450 0,450" fill="#0C0600" />
+
+  <!-- Badge -->
+  <rect x="15" y="15" width="55" height="20" rx="4" fill="#B45309" />
+  <text x="42" y="29" fill="#FFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" text-anchor="middle">A 18+</text>
+
+  <!-- Title & Typography -->
+  <text x="150" y="336" fill="url(#solidGold)" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="900" letter-spacing="4" text-anchor="middle">GOLD COAST</text>
+  <text x="150" y="362" fill="#FEF08A" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" letter-spacing="5" text-anchor="middle">CHRONICLES</text>
+  <line x1="50" y1="380" x2="250" y2="380" stroke="#EAB308" stroke-width="1.2" opacity="0.6" />
+  <text x="150" y="402" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" letter-spacing="2" text-anchor="middle">KANNADA • HINDI • ACTION</text>
+  <text x="150" y="425" fill="#FBBF24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">★ 9.3 MASS EXTRAVAGANZA</text>
+</svg>

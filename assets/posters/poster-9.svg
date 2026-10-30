@@ -1,0 +1,51 @@
+<!-- Poster 9: The Darjeeling Whistle -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" fill="none">
+  <defs>
+    <linearGradient id="bgDarjeeling" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="silverMist" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="50%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="450" fill="url(#bgDarjeeling)" />
+
+  <!-- Snow-capped Kanchenjunga Mountains in Moonlight -->
+  <polygon points="20,160 80,70 140,150" fill="#F8FAFC" opacity="0.9" />
+  <polygon points="110,170 190,50 270,160" fill="#F1F5F9" opacity="0.9" />
+  <polygon points="60,110 80,70 100,110" fill="#38BDF8" opacity="0.3" />
+  <polygon points="160,100 190,50 220,100" fill="#38BDF8" opacity="0.3" />
+
+  <!-- Toy Train Steam Engine on Himalayan Mountain Trestle -->
+  <!-- Pine trees -->
+  <polygon points="30,220 15,260 45,260" fill="#064E3B" />
+  <polygon points="260,210 245,250 275,250" fill="#064E3B" />
+
+  <!-- Steam Cloud from Whistle -->
+  <circle cx="160" cy="180" r="16" fill="#F8FAFC" opacity="0.6" filter="blur(4px)" />
+  <circle cx="180" cy="165" r="22" fill="#F8FAFC" opacity="0.4" filter="blur(6px)" />
+  <circle cx="210" cy="150" r="30" fill="#F8FAFC" opacity="0.3" filter="blur(8px)" />
+
+  <!-- Locomotive Silhouette with Glowing Headlight -->
+  <rect x="110" y="210" width="55" height="30" rx="3" fill="#DC2626" />
+  <rect x="145" y="195" width="16" height="20" fill="#1E293B" />
+  <circle cx="110" cy="225" r="7" fill="#FEF08A" filter="drop-shadow(0 0 12px #FDE047)" />
+  <!-- Train Tracks Bridge -->
+  <line x1="0" y1="245" x2="300" y2="245" stroke="#94A3B8" stroke-width="3" />
+  <line x1="0" y1="248" x2="300" y2="248" stroke="#475569" stroke-width="1.5" />
+
+  <!-- Badge -->
+  <rect x="15" y="15" width="55" height="20" rx="4" fill="#0284C7" />
+  <text x="42" y="29" fill="#FFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" text-anchor="middle">BENGALI</text>
+
+  <!-- Title & Typography -->
+  <text x="150" y="336" fill="url(#silverMist)" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="900" letter-spacing="3" text-anchor="middle">DARJEELING</text>
+  <text x="150" y="362" fill="#FDE047" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" letter-spacing="6" text-anchor="middle">WHISTLE</text>
+  <line x1="50" y1="380" x2="250" y2="380" stroke="#38BDF8" stroke-width="1.2" opacity="0.6" />
+  <text x="150" y="402" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" letter-spacing="2" text-anchor="middle">BENGALI • ENGLISH • MURDER MYSTERY</text>
+  <text x="150" y="425" fill="#38BDF8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">★ 9.0 CLASSIC AGATHA-STYLE</text>
+</svg>

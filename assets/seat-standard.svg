@@ -1,0 +1,27 @@
+<!-- Standard Cinema Seat -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
+  <defs>
+    <linearGradient id="stdGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3A3F50" />
+      <stop offset="100%" stop-color="#222530" />
+    </linearGradient>
+    <linearGradient id="stdCushion" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4B5268" />
+      <stop offset="100%" stop-color="#2D3242" />
+    </linearGradient>
+  </defs>
+  <!-- Backrest -->
+  <rect x="8" y="4" width="28" height="18" rx="5" fill="url(#stdGrad)" stroke="#555D75" stroke-width="1.2" />
+  <!-- Backrest inner seams -->
+  <line x1="15" y1="8" x2="15" y2="18" stroke="#252834" stroke-width="1" />
+  <line x1="22" y1="8" x2="22" y2="18" stroke="#252834" stroke-width="1" />
+  <line x1="29" y1="8" x2="29" y2="18" stroke="#252834" stroke-width="1" />
+
+  <!-- Seat Bottom Cushion -->
+  <path d="M 9 22 L 35 22 C 37 22 38 23.5 38 25 L 38 33 C 38 35.5 36 37 33 37 L 11 37 C 8 37 6 35.5 6 33 L 6 25 C 6 23.5 7 22 9 22 Z" fill="url(#stdCushion)" stroke="#555D75" stroke-width="1.2" />
+  
+  <!-- Left Armrest -->
+  <rect x="3" y="14" width="4" height="19" rx="2" fill="#20232D" stroke="#484E62" stroke-width="1" />
+  <!-- Right Armrest -->
+  <rect x="37" y="14" width="4" height="19" rx="2" fill="#20232D" stroke="#484E62" stroke-width="1" />
+</svg>

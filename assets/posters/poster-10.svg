@@ -1,0 +1,55 @@
+<!-- Poster 10: Punjab Da Sher - The Golden Heart -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" fill="none">
+  <defs>
+    <linearGradient id="bgPunjab" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#78350F" />
+      <stop offset="50%" stop-color="#451A03" />
+      <stop offset="100%" stop-color="#1C0A00" />
+    </linearGradient>
+    <linearGradient id="punjabGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="450" fill="url(#bgPunjab)" />
+
+  <!-- Golden Mustard Fields (Sarson ke Khet) & Dhol Silhouette -->
+  <!-- Radiant Sun -->
+  <circle cx="150" cy="130" r="75" fill="#FBBF24" opacity="0.85" filter="drop-shadow(0 0 30px #F59E0B)" />
+
+  <!-- Traditional Punjabi Dhol Drum -->
+  <g transform="translate(150, 160)">
+    <ellipse cx="0" cy="0" rx="45" ry="32" fill="#B45309" stroke="#FEF08A" stroke-width="2.5" />
+    <!-- Dhol leather ends -->
+    <ellipse cx="-45" cy="0" rx="8" ry="30" fill="#78350F" stroke="#FEF08A" stroke-width="2" />
+    <ellipse cx="45" cy="0" rx="8" ry="30" fill="#78350F" stroke="#FEF08A" stroke-width="2" />
+    <!-- Dhol Ropes / Zig-zag straps -->
+    <path d="M -45 -15 L -20 15 L 0 -15 L 20 15 L 45 -15" stroke="#FEF08A" stroke-width="1.8" fill="none" />
+    <path d="M -45 15 L -20 -15 L 0 15 L 20 -15 L 45 15" stroke="#FEF08A" stroke-width="1.8" fill="none" />
+    <!-- Crossed Drumsticks (Daga & Tilli) -->
+    <line x1="-35" y1="-35" x2="35" y2="35" stroke="#EA580C" stroke-width="3" stroke-linecap="round" />
+    <line x1="35" y1="-35" x2="-35" y2="35" stroke="#EA580C" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Golden Mustard crop stalks base -->
+  <g stroke="#FDE047" stroke-width="1.2" opacity="0.7">
+    <line x1="20" y1="280" x2="25" y2="230" /><circle cx="25" cy="225" r="4" fill="#FDE047" />
+    <line x1="50" y1="290" x2="60" y2="220" /><circle cx="60" cy="215" r="4" fill="#FDE047" />
+    <line x1="90" y1="285" x2="85" y2="235" /><circle cx="85" cy="230" r="4" fill="#FDE047" />
+    <line x1="220" y1="290" x2="215" y2="225" /><circle cx="215" cy="220" r="4" fill="#FDE047" />
+    <line x1="260" y1="280" x2="270" y2="230" /><circle cx="270" cy="225" r="4" fill="#FDE047" />
+  </g>
+  <path d="M 0 270 Q 150 250 300 270 L 300 450 L 0 450 Z" fill="#291102" />
+
+  <!-- Badge -->
+  <rect x="15" y="15" width="55" height="20" rx="4" fill="#D97706" />
+  <text x="42" y="29" fill="#FFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" text-anchor="middle">PUNJABI</text>
+
+  <!-- Title & Typography -->
+  <text x="150" y="336" fill="url(#punjabGold)" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="900" letter-spacing="3" text-anchor="middle">PUNJAB DA SHER</text>
+  <text x="150" y="362" fill="#FEF08A" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" letter-spacing="5" text-anchor="middle">THE GOLDEN HEART</text>
+  <line x1="50" y1="380" x2="250" y2="380" stroke="#F59E0B" stroke-width="1.2" opacity="0.6" />
+  <text x="150" y="402" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" letter-spacing="2" text-anchor="middle">PUNJABI • MUSICAL ROMANCE</text>
+  <text x="150" y="425" fill="#FBBF24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">★ 9.4 ENERGY UNMATCHED</text>
+</svg>

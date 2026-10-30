@@ -1,0 +1,41 @@
+<!-- Cinemora Director's Cut & Dolby Atmos Interior SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <defs>
+    <radialGradient id="directGlow" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#31102A" />
+      <stop offset="50%" stop-color="#190616" />
+      <stop offset="100%" stop-color="#090208" />
+    </radialGradient>
+    <linearGradient id="warmAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#directGlow)" />
+  
+  <!-- Curved Screen -->
+  <path d="M 60 20 Q 200 12 340 20 L 330 100 Q 200 110 70 100 Z" fill="#FDF4FF" opacity="0.9" filter="drop-shadow(0 0 25px rgba(244,114,182,0.5))" />
+  <text x="200" y="65" fill="#4A044E" font-family="'Playfair Display', serif" font-size="16" font-weight="bold" letter-spacing="3" text-anchor="middle">DIRECTOR'S CUT</text>
+  <text x="200" y="82" fill="#701A75" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="4" text-anchor="middle">DOLBY ATMOS 360 SOUND</text>
+
+  <!-- Atmos Spatial Audio Ceiling Emitters -->
+  <circle cx="100" cy="18" r="4" fill="none" stroke="#F472B6" stroke-width="1.5" />
+  <circle cx="100" cy="18" r="8" fill="none" stroke="#F472B6" stroke-width="0.8" opacity="0.5" />
+  <circle cx="200" cy="10" r="4" fill="none" stroke="#F472B6" stroke-width="1.5" />
+  <circle cx="200" cy="10" r="8" fill="none" stroke="#F472B6" stroke-width="0.8" opacity="0.5" />
+  <circle cx="300" cy="18" r="4" fill="none" stroke="#F472B6" stroke-width="1.5" />
+  <circle cx="300" cy="18" r="8" fill="none" stroke="#F472B6" stroke-width="0.8" opacity="0.5" />
+
+  <!-- Intimate Private Loungers & Service Call Buttons -->
+  <g transform="translate(40, 140)">
+    <!-- Pair 1 -->
+    <rect x="0" y="10" width="80" height="35" rx="6" fill="#4A044E" stroke="url(#warmAmber)" stroke-width="1.5" />
+    <circle cx="40" cy="15" r="4" fill="#FBBF24" />
+    <!-- Pair 2 (Center) -->
+    <rect x="120" y="10" width="80" height="35" rx="6" fill="#4A044E" stroke="url(#warmAmber)" stroke-width="1.5" />
+    <circle cx="160" cy="15" r="4" fill="#FBBF24" />
+    <!-- Pair 3 -->
+    <rect x="240" y="10" width="80" height="35" rx="6" fill="#4A044E" stroke="url(#warmAmber)" stroke-width="1.5" />
+    <circle cx="280" cy="15" r="4" fill="#FBBF24" />
+  </g>
+</svg>

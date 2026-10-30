@@ -1,0 +1,42 @@
+<!-- Cinemora IMAX Laser Curved Screen Interior SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <defs>
+    <radialGradient id="laserGlow" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.9" />
+      <stop offset="45%" stop-color="#0369A1" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#030712" />
+    </radialGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+  <!-- Background Arena -->
+  <rect width="400" height="240" fill="#030712" />
+  <rect width="400" height="240" fill="url(#laserGlow)" opacity="0.6" />
+
+  <!-- Giant Curved IMAX Laser Screen -->
+  <path d="M 30 18 Q 200 4 370 18 L 360 120 Q 200 135 40 120 Z" fill="url(#screenGrad)" opacity="0.9" filter="drop-shadow(0 0 35px rgba(56,189,248,0.7))" />
+  <text x="200" y="76" fill="#031525" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="900" letter-spacing="6" text-anchor="middle">IMAX LASER</text>
+  
+  <!-- Architectural Geometric Sound Panels -->
+  <polygon points="0,0 20,40 0,80" fill="#0EA5E9" opacity="0.3" />
+  <polygon points="400,0 380,40 400,80" fill="#0EA5E9" opacity="0.3" />
+  
+  <!-- Stadium Seating Rows (Tiered Perspective) -->
+  <!-- Tier 3 (Far) -->
+  <path d="M 90 145 Q 200 152 310 145" stroke="#1E293B" stroke-width="12" stroke-linecap="round" />
+  <path d="M 90 142 Q 200 149 310 142" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+  
+  <!-- Tier 2 (Mid) -->
+  <path d="M 60 175 Q 200 186 340 175" stroke="#0F172A" stroke-width="16" stroke-linecap="round" />
+  <path d="M 60 171 Q 200 182 340 171" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+
+  <!-- Tier 1 (Near Front) -->
+  <path d="M 20 215 Q 200 230 380 215" stroke="#020617" stroke-width="24" stroke-linecap="round" />
+  <path d="M 20 208 Q 200 223 380 208" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Blue Aisle Neon Guide Lights -->
+  <line x1="80" y1="130" x2="40" y2="240" stroke="#00F0FF" stroke-width="2.5" opacity="0.8" />
+  <line x1="320" y1="130" x2="360" y2="240" stroke="#00F0FF" stroke-width="2.5" opacity="0.8" />
+</svg>

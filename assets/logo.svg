@@ -1,0 +1,46 @@
+<!-- Cinemora Logo -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDF78" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#AA7C11" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3B30" />
+      <stop offset="100%" stop-color="#B3091B" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Film Strip & Ticket Notch Emblem -->
+  <g transform="translate(10, 10)">
+    <!-- Base ticket shape with left/right notches -->
+    <path d="M 0 12 C 0 5.37 5.37 0 12 0 L 48 0 C 54.63 0 60 5.37 60 12 L 60 22 C 55 22 51 26 51 30 C 51 34 55 38 60 38 L 60 48 C 60 54.63 54.63 60 48 60 L 12 60 C 5.37 60 0 54.63 0 48 L 0 38 C 5 38 9 34 9 30 C 9 26 5 22 0 22 Z" fill="#1A1C24" stroke="url(#goldGrad)" stroke-width="2.5" />
+    
+    <!-- Film perforation squares top & bottom -->
+    <rect x="12" y="8" width="6" height="6" rx="1.5" fill="url(#goldGrad)" />
+    <rect x="27" y="8" width="6" height="6" rx="1.5" fill="url(#goldGrad)" />
+    <rect x="42" y="8" width="6" height="6" rx="1.5" fill="url(#goldGrad)" />
+    <rect x="12" y="46" width="6" height="6" rx="1.5" fill="url(#goldGrad)" />
+    <rect x="27" y="46" width="6" height="6" rx="1.5" fill="url(#goldGrad)" />
+    <rect x="42" y="46" width="6" height="6" rx="1.5" fill="url(#goldGrad)" />
+
+    <!-- Cinema Projector / Play Beam -->
+    <polygon points="25,22 41,30 25,38" fill="url(#redGrad)" filter="url(#glow)" />
+  </g>
+
+  <!-- Typography -->
+  <text x="82" y="44" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="800" letter-spacing="4" fill="#FFFFFF">
+    CINE<tspan fill="url(#goldGrad)">MORA</tspan>
+  </text>
+  
+  <!-- Subtitle Tagline -->
+  <text x="85" y="59" font-family="'Plus Jakarta Sans', Inter, sans-serif" font-size="8.5" font-weight="600" letter-spacing="3" fill="#A0A5B5">
+    YOUR SEAT. YOUR SHOW.
+  </text>
+  <circle cx="270" cy="56" r="2" fill="url(#redGrad)" />
+</svg>

@@ -1,0 +1,27 @@
+<!-- Cinema Soda / Chilled Beverage -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <defs>
+    <linearGradient id="cupGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="strawGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#F87171" />
+    </linearGradient>
+  </defs>
+  <!-- Straw -->
+  <line x1="38" y1="6" x2="38" y2="24" stroke="url(#strawGrad)" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="38" y1="6" x2="48" y2="4" stroke="url(#strawGrad)" stroke-width="4.5" stroke-linecap="round" />
+  <!-- Lid -->
+  <ellipse cx="40" cy="24" rx="19" ry="4.5" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5" />
+  <!-- Cup body -->
+  <polygon points="23,24 57,24 52,72 28,72" fill="url(#cupGrad)" stroke="#38BDF8" stroke-width="1.5" />
+  <!-- Neon Band -->
+  <polygon points="24.5,36 55.5,36 54,46 26,46" fill="#0284C7" opacity="0.8" />
+  <!-- Logo / Drop -->
+  <circle cx="40" cy="41" r="3.5" fill="#F8FAFC" />
+  <!-- Ice cubes indication -->
+  <rect x="33" y="54" width="6" height="6" rx="1.5" fill="#38BDF8" opacity="0.4" />
+  <rect x="42" y="58" width="5" height="5" rx="1.5" fill="#38BDF8" opacity="0.4" />
+</svg>

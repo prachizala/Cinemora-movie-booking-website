@@ -1,0 +1,70 @@
+<!-- Cinemora Royale VIP Lounge Interior SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <defs>
+    <radialGradient id="royaleGlow" cx="50%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#451A03" />
+      <stop offset="60%" stop-color="#1C1008" />
+      <stop offset="100%" stop-color="#0B0806" />
+    </radialGradient>
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <!-- Background Walls -->
+  <rect width="400" height="240" fill="url(#royaleGlow)" />
+  <!-- Acoustic wood vertical slats -->
+  <g stroke="#78350F" stroke-width="1.5" opacity="0.4">
+    <line x1="30" y1="0" x2="30" y2="240" /><line x1="60" y1="0" x2="60" y2="240" /><line x1="90" y1="0" x2="90" y2="240" />
+    <line x1="310" y1="0" x2="310" y2="240" /><line x1="340" y1="0" x2="340" y2="240" /><line x1="370" y1="0" x2="370" y2="240" />
+  </g>
+  <!-- Warm Overhead Downlights -->
+  <polygon points="80,0 40,160 120,160" fill="url(#goldLight)" opacity="0.3" />
+  <polygon points="200,0 150,160 250,160" fill="url(#goldLight)" opacity="0.4" />
+  <polygon points="320,0 280,160 360,160" fill="url(#goldLight)" opacity="0.3" />
+
+  <!-- Screen Glowing in Background -->
+  <rect x="110" y="25" width="180" height="85" rx="4" fill="#FEF08A" opacity="0.85" filter="drop-shadow(0 0 20px rgba(254,240,138,0.6))" />
+  <text x="200" y="72" fill="#78350F" font-family="'Playfair Display', serif" font-size="16" font-weight="bold" text-anchor="middle" letter-spacing="2">ROYALE LOUNGE</text>
+
+  <!-- Luxurious Recliner Rows (Front & Mid) -->
+  <!-- Back Row Recliners -->
+  <g transform="translate(130, 125) scale(0.65)" opacity="0.85">
+    <rect x="10" y="0" width="30" height="20" rx="4" fill="#581C87" stroke="#A855F7" />
+    <rect x="55" y="0" width="30" height="20" rx="4" fill="#581C87" stroke="#A855F7" />
+    <rect x="100" y="0" width="30" height="20" rx="4" fill="#581C87" stroke="#A855F7" />
+  </g>
+
+  <!-- Front Row Grand Recliners -->
+  <!-- Left Grand Recliner -->
+  <g transform="translate(50, 155)">
+    <rect x="0" y="10" width="65" height="40" rx="8" fill="#3B0764" stroke="#D97706" stroke-width="2" />
+    <rect x="8" y="2" width="49" height="18" rx="6" fill="#6B21A8" />
+    <rect x="-8" y="20" width="14" height="40" rx="6" fill="#1E0A3C" stroke="#D97706" />
+    <rect x="59" y="20" width="14" height="40" rx="6" fill="#1E0A3C" stroke="#D97706" />
+    <!-- Table Lamp Glow -->
+    <circle cx="78" cy="22" r="5" fill="#FEF08A" filter="drop-shadow(0 0 8px #F59E0B)" />
+  </g>
+  <!-- Center Grand Couple Sofa -->
+  <g transform="translate(145, 155)">
+    <rect x="0" y="10" width="110" height="40" rx="8" fill="#7F1D1D" stroke="#D97706" stroke-width="2" />
+    <rect x="8" y="2" width="44" height="18" rx="6" fill="#991B1B" />
+    <rect x="58" y="2" width="44" height="18" rx="6" fill="#991B1B" />
+    <rect x="-6" y="20" width="12" height="40" rx="5" fill="#450A0A" />
+    <rect x="104" y="20" width="12" height="40" rx="5" fill="#450A0A" />
+    <!-- Center divider -->
+    <rect x="49" y="20" width="12" height="35" rx="3" fill="#280505" stroke="#D97706" />
+  </g>
+  <!-- Right Grand Recliner -->
+  <g transform="translate(285, 155)">
+    <rect x="0" y="10" width="65" height="40" rx="8" fill="#3B0764" stroke="#D97706" stroke-width="2" />
+    <rect x="8" y="2" width="49" height="18" rx="6" fill="#6B21A8" />
+    <rect x="-8" y="20" width="14" height="40" rx="6" fill="#1E0A3C" stroke="#D97706" />
+    <rect x="59" y="20" width="14" height="40" rx="6" fill="#1E0A3C" stroke="#D97706" />
+    <!-- Table Lamp Glow -->
+    <circle cx="-13" cy="22" r="5" fill="#FEF08A" filter="drop-shadow(0 0 8px #F59E0B)" />
+  </g>
+  
+  <!-- Velvet Floor Step Glow -->
+  <line x1="0" y1="210" x2="400" y2="210" stroke="#CA8A04" stroke-width="1.5" opacity="0.6" />
+</svg>

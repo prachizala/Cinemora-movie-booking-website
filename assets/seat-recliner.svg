@@ -1,0 +1,58 @@
+<!-- Luxury Motorized VIP Recliner Seat -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" fill="none">
+  <defs>
+    <linearGradient id="recLeather" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4C1D95" />
+      <stop offset="50%" stop-color="#3B0764" />
+      <stop offset="100%" stop-color="#1E0A3C" />
+    </linearGradient>
+    <linearGradient id="recPillow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#4C1D95" />
+    </linearGradient>
+    <linearGradient id="footrestGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#581C87" />
+      <stop offset="100%" stop-color="#2E1065" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#CA8A04" />
+    </linearGradient>
+    <filter id="recGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Padded Ergonomic Headrest Pillow (Tilted backward) -->
+  <rect x="14" y="2" width="24" height="8" rx="4" fill="url(#recPillow)" stroke="url(#goldAccent)" stroke-width="1.2" />
+
+  <!-- Quilted Diamond Recliner Backrest -->
+  <path d="M 10 10 L 42 10 C 44.5 10 46 12 45 15 L 43 25 C 42.5 27 40.5 28 38 28 L 14 28 C 11.5 28 9.5 27 9 25 L 7 15 C 6 12 7.5 10 10 10 Z" fill="url(#recLeather)" stroke="#A855F7" stroke-width="1.2" />
+  
+  <!-- Diamond Quilting Stitching -->
+  <path d="M 26 12 L 20 19 L 26 26 L 32 19 Z" stroke="#C084FC" stroke-width="0.7" opacity="0.6" fill="none" />
+  <path d="M 16 14 L 12 19 L 16 24" stroke="#C084FC" stroke-width="0.7" opacity="0.6" fill="none" />
+  <path d="M 36 14 L 40 19 L 36 24" stroke="#C084FC" stroke-width="0.7" opacity="0.6" fill="none" />
+
+  <!-- Deep Plush Main Seat Cushion -->
+  <rect x="10" y="27" width="32" height="13" rx="3.5" fill="url(#recPillow)" stroke="#A855F7" stroke-width="1.2" />
+  <line x1="26" y1="28" x2="26" y2="39" stroke="#3B0764" stroke-width="1.2" />
+
+  <!-- Extended Motorized Footrest (Folded-out luxury position) -->
+  <path d="M 12 41 L 40 41 C 41.5 41 42 42 41.5 43.5 L 40 49 C 39.5 50.5 38 51.5 36 51.5 L 16 51.5 C 14 51.5 12.5 50.5 12 49 L 10.5 43.5 C 10 42 10.5 41 12 41 Z" fill="url(#footrestGrad)" stroke="url(#goldAccent)" stroke-width="1.2" />
+  <line x1="16" y1="46" x2="36" y2="46" stroke="#C084FC" stroke-width="0.8" opacity="0.7" stroke-dasharray="2,2" />
+
+  <!-- Wide VIP Left Armrest with Gold Cupholder & Recline Buttons -->
+  <rect x="2" y="11" width="7" height="28" rx="3.5" fill="#1E0A3C" stroke="#A855F7" stroke-width="1.1" />
+  <circle cx="5.5" cy="16" r="2" fill="url(#goldAccent)" />
+  <circle cx="5.5" cy="16" r="1.3" fill="#1E0A3C" />
+  <!-- Mini recline adjustment toggle -->
+  <rect x="4.2" y="24" width="2.5" height="4" rx="1" fill="#C084FC" opacity="0.8" />
+
+  <!-- Wide VIP Right Armrest with Gold Cupholder & Tray Swivel Mount -->
+  <rect x="43" y="11" width="7" height="28" rx="3.5" fill="#1E0A3C" stroke="#A855F7" stroke-width="1.1" />
+  <circle cx="46.5" cy="16" r="2" fill="url(#goldAccent)" />
+  <circle cx="46.5" cy="16" r="1.3" fill="#1E0A3C" />
+  <circle cx="46.5" cy="26" r="1.5" fill="#E9D5FF" opacity="0.8" />
+</svg>

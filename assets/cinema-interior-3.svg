@@ -1,0 +1,37 @@
+<!-- Cinemora Samsung Onyx LED Pure Black Screen Interior SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <defs>
+    <linearGradient id="onyxBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E11D48" />
+      <stop offset="50%" stop-color="#9333EA" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="#08080C" />
+  
+  <!-- LED Screen Bezel & Ultra Vivid Display -->
+  <rect x="70" y="25" width="260" height="95" rx="6" fill="#000000" stroke="url(#onyxBorder)" stroke-width="2.5" />
+  <!-- Vivid High-Dynamic Content on Screen -->
+  <circle cx="200" cy="72" r="32" fill="#E11D48" opacity="0.8" filter="blur(8px)" />
+  <circle cx="220" cy="70" r="26" fill="#38BDF8" opacity="0.7" filter="blur(8px)" />
+  <text x="200" y="77" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="900" letter-spacing="4" text-anchor="middle">ONYX 4K HDR</text>
+
+  <!-- Ambient Sound Array in Ceiling -->
+  <circle cx="90" cy="12" r="3" fill="#E11D48" opacity="0.6" />
+  <circle cx="150" cy="8" r="3" fill="#9333EA" opacity="0.6" />
+  <circle cx="250" cy="8" r="3" fill="#9333EA" opacity="0.6" />
+  <circle cx="310" cy="12" r="3" fill="#E11D48" opacity="0.6" />
+
+  <!-- High-Comfort Seating Rows -->
+  <g transform="translate(0, 130)">
+    <!-- Row 3 -->
+    <path d="M 80 15 L 320 15" stroke="#1E1B4B" stroke-width="12" stroke-linecap="round" />
+    <line x1="80" y1="12" x2="320" y2="12" stroke="#A855F7" stroke-width="1.5" opacity="0.5" />
+    <!-- Row 2 -->
+    <path d="M 50 45 L 350 45" stroke="#18181B" stroke-width="16" stroke-linecap="round" />
+    <line x1="50" y1="41" x2="350" y2="41" stroke="#EC4899" stroke-width="2" opacity="0.6" />
+    <!-- Row 1 -->
+    <path d="M 20 80 L 380 80" stroke="#09090B" stroke-width="22" stroke-linecap="round" />
+    <line x1="20" y1="74" x2="380" y2="74" stroke="#F43F5E" stroke-width="2.5" />
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+<!-- Poster 13: Symphony of the Ghats -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" fill="none">
+  <defs>
+    <linearGradient id="bgGhats" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B0764" />
+      <stop offset="45%" stop-color="#1E1B4B" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="divineGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="50%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="450" fill="url(#bgGhats)" />
+
+  <!-- Varanasi Ganga Aarti Diya Lamps floating & Sitar Strings -->
+  <!-- Classical Sitar Silhouette -->
+  <g transform="translate(150, 140)">
+    <circle cx="0" cy="50" r="38" fill="#78350F" stroke="#FDE047" stroke-width="1.8" />
+    <rect x="-5" y="-90" width="10" height="140" fill="#451A03" stroke="#FDE047" stroke-width="1" />
+    <!-- Sitar tuning pegs -->
+    <circle cx="-10" cy="-70" r="3" fill="#FDE047" />
+    <circle cx="10" cy="-60" r="3" fill="#FDE047" />
+    <circle cx="-10" cy="-50" r="3" fill="#FDE047" />
+    <circle cx="10" cy="-40" r="3" fill="#FDE047" />
+    <!-- Sound vibration rings -->
+    <circle cx="0" cy="50" r="55" stroke="#FBBF24" stroke-width="0.8" opacity="0.4" stroke-dasharray="4,4" />
+    <circle cx="0" cy="50" r="75" stroke="#FBBF24" stroke-width="0.6" opacity="0.3" stroke-dasharray="6,4" />
+  </g>
+
+  <!-- Floating Deepam Lamps in holy river -->
+  <g transform="translate(0, 230)">
+    <!-- Diya 1 -->
+    <ellipse cx="60" cy="40" rx="14" ry="5" fill="#B45309" />
+    <path d="M 60 40 Q 64 26 60 20 Q 56 26 60 40" fill="#FDE047" filter="drop-shadow(0 0 6px #F59E0B)" />
+    <!-- Diya 2 (Center) -->
+    <ellipse cx="150" cy="55" rx="18" ry="6" fill="#B45309" />
+    <path d="M 150 55 Q 155 35 150 28 Q 145 35 150 55" fill="#FDE047" filter="drop-shadow(0 0 8px #F59E0B)" />
+    <!-- Diya 3 -->
+    <ellipse cx="240" cy="42" rx="14" ry="5" fill="#B45309" />
+    <path d="M 240 42 Q 244 28 240 22 Q 236 28 240 42" fill="#FDE047" filter="drop-shadow(0 0 6px #F59E0B)" />
+  </g>
+
+  <!-- Ghat Steps base -->
+  <path d="M 0 300 L 300 300 L 300 450 L 0 450 Z" fill="#0A0612" />
+
+  <!-- Badge -->
+  <rect x="15" y="15" width="40" height="20" rx="4" fill="#6B21A8" />
+  <text x="35" y="29" fill="#FFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" text-anchor="middle">U</text>
+
+  <!-- Title & Typography -->
+  <text x="150" y="336" fill="url(#divineGold)" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="900" letter-spacing="3" text-anchor="middle">SYMPHONY</text>
+  <text x="150" y="362" fill="#E9D5FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" letter-spacing="5" text-anchor="middle">OF THE GHATS</text>
+  <line x1="50" y1="380" x2="250" y2="380" stroke="#FBBF24" stroke-width="1.2" opacity="0.6" />
+  <text x="150" y="402" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" letter-spacing="2" text-anchor="middle">HINDI • CLASSICAL MUSICAL</text>
+  <text x="150" y="425" fill="#FDE047" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">★ 9.5 SOUL-STIRRING</text>
+</svg>
