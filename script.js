@@ -2176,6 +2176,29 @@
       handleRoute();
     },
 
+        downloadTicketPdf(bookingId) {
+      const element = document.querySelector('.cinema-boarding-pass');
+      if (!element) {
+        window.print();
+        return;
+      }
+      showToast('Generating high-resolution PDF pass...', 'info');
+      if (window.html2pdf) {
+        const opt = {
+          margin:       0.3,
+          filename:     `Cinemora_Ticket_${bookingId}.pdf`,
+          image:        { type: 'jpeg', quality: 0.98 },
+          html2canvas:  { scale: 2, useCORS: true },
+          jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }
+        };
+        html2pdf().set(opt).from(element).save().then(() => {
+          showToast('Ticket PDF downloaded successfully!', 'success');
+        });
+      } else {
+        window.print();
+      }
+    },
+
     shareMovie(title) {
       if (navigator.share) {
         navigator.share({
