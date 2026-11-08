@@ -70,7 +70,7 @@ export async function fetchLiveIndianTheatricalMovies(apiKey = process.env.TMDB_
         backdropPath: backdropUrl,
         tagline: m.overview ? m.overview.slice(0, 60) + '...' : 'An unmissable cinematic spectacle.',
         synopsis: m.overview || 'Experience this monumental theatrical release with unprecedented sound and visuals in CINEMORA luxury auditoriums.',
-        director: 'Acclaimed Indian Filmmaker',
+        director: 'Acclaimed Filmmaker',
         cast: [
           { name: 'Lead Actor', role: 'Protagonist' },
           { name: 'Co-Star', role: 'Crucial Role' },
@@ -79,9 +79,9 @@ export async function fetchLiveIndianTheatricalMovies(apiKey = process.env.TMDB_
         isTrending: index < 5,
         isPopular: index >= 5 && index < 10,
         formats: ['IMAX Laser 3D', '4DX', 'Dolby Atmos', 'Director Suite'],
-        trailerYoutubeKey: (m.title ? 'JNJ6luyhR2I' : 'dQw4w9WgXcQ')
+        trailerYoutubeKey: 'JNJ6luyhR2I'
       };
-    });
+    }));
 
     return transformedMovies;
   } catch (err) {
