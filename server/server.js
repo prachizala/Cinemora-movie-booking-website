@@ -9,6 +9,11 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
+import path from 'path';
+import { fileURLToPath } from 'url';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+app.use(express.static(path.join(__dirname, '..')));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, '..', 'index.html')));
 
 // 1. INITIAL SYNC OF MOVIES & CINEMAS ON STARTUP
 async function bootstrapData() {
