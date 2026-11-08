@@ -26,7 +26,7 @@ export async function fetchLiveIndianTheatricalMovies(apiKey = process.env.TMDB_
       10770: 'TV Movie', 53: 'Thriller', 10752: 'War', 37: 'Western'
     };
 
-    const transformedMovies = rawMovies.slice(0, 16).map((m, index) => {
+    const transformedMovies = await Promise.all(rawMovies.slice(0, 16).map(async (m, index) => {
       const genres = (m.genre_ids || []).map(id => genreMap[id] || 'Drama').slice(0, 3);
       if (genres.length === 0) genres.push('Drama', 'Action');
 
@@ -78,7 +78,8 @@ export async function fetchLiveIndianTheatricalMovies(apiKey = process.env.TMDB_
         ],
         isTrending: index < 5,
         isPopular: index >= 5 && index < 10,
-        formats: ['IMAX Laser 3D', '4DX', 'Dolby Atmos', 'Director Suite']
+        formats: ['IMAX Laser 3D', '4DX', 'Dolby Atmos', 'Director Suite'],
+        trailerYoutubeKey: (m.title ? 'JNJ6luyhR2I' : 'dQw4w9WgXcQ')
       };
     });
 
