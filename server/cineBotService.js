@@ -1,13 +1,60 @@
 /**
  * CineBot AI Assistant Engine
- * Answers customer queries regarding currently running movies, show timings, seat recommendations, and offers.
- * Uses intelligent intent extraction and live database awareness.
+ * Hybrid AI System:
+ * 1. Checks if GEMINI_API_KEY is configured -> calls Google Gemini 1.5 Flash for natural, bilingual (Hindi/English/Gujarati) replies.
+ * 2. If no key is set or offline -> falls back to smart contextual database intent engine.
  */
 
-export function processChatQuery(userMessage, db) {
+export async function processChatQuery(userMessage, db) {
   const query = (userMessage || '').toLowerCase().trim();
   const movies = db.movies || [];
   const cinemas = db.cinemas || [];
+
+  const geminiApiKey = process.env.GEMINI_API_KEY;
+
+  if (geminiApiKey) {
+    try {
+      const topMoviesContext = movies.slice(0, 6).map(m => `- ${m.title} (${m.language}, ${m.genres.join('/')}, Rating: ${m.criticRating}/10, ID: ${m.id})`).join('\n');
+      const prompt = `You are CineBot, the luxury AI concierge for CINEMORA movie booking website.
+Current Now Showing Movies on Cinemora:
+${topMoviesContext}
+
+Luxury seating tiers:
+1. Double Couple Sofa (Row J, 2-seater, ₹1200)
+2. Motorized VIP Recliner (Row G-H, 180-degree recline, ₹650)
+3. Prime Lounger (Row D-F, ₹380)
+4. Silver Class (Row A-C, ₹240)
+
+Active Promos: CINEMORA50 (50% off), GOLDLUXE (₹300 off on VIP/Couple Sofa).
+
+User message: "${userMessage}"
+Respond politely and enthusiastically in concise markdown. Support English, Hindi, and Hinglish. Suggest specific movies and seats when asked.`;
+
+      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiApiKey}`;
+      const response = await fetch(geminiUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }]
+        })
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        const aiText = result.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (aiText) {
+          return {
+            reply: aiText,
+            suggestions: ['What is trending today?', 'Best couple sofa seats', 'Available bank offers']
+          };
+        }
+      }
+    } catch (err) {
+      console.warn('Gemini API call failed, falling back to smart intent engine:', err.message);
+    }
+  }
+
+  // INTENT ENGINE FALLBACK
 
   // 1. GREETINGS
   if (query.match(/^(hi|hello|hey|namaste|kem cho|good morning|good evening)/i)) {
