@@ -156,10 +156,10 @@ app.get('/api/bookings', (req, res) => {
 });
 
 // POST /api/chat - CineBot AI Chat Assistant
-app.post('/api/chat', (req, res) => {
+app.post('/api/chat', async (req, res) => {
   const { message } = req.body;
   const db = getDb();
-  const response = processChatQuery(message, db);
+  const response = await processChatQuery(message, db);
   res.json({ success: true, ...response });
 });
 
