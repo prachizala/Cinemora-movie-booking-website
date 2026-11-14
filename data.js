@@ -546,7 +546,7 @@ const CINEMORA_DATA = (function() {
   const MOVIES = [
     {
       id: 'mv-01',
-      title: 'Ashoka: The Iron Emperor',
+      title: 'Kalki 2898 AD',
       tagline: 'Before the peace, there was iron and blood.',
       synopsis: 'A grand historical war spectacle chronicles the bloody battle of Kalinga, Prince Ashoka’s ruthless conquest of the subcontinent, and his profound internal awakening towards dharma and compassion that transformed the course of Asian history.',
       duration: '2h 55m',
@@ -585,7 +585,7 @@ const CINEMORA_DATA = (function() {
     },
     {
       id: 'mv-04',
-      title: 'Vayuputra: Son of the Wind',
+      title: 'Devara: Part 1',
       tagline: 'When gods walk upon earth, storms bow.',
       synopsis: 'A high-octane modern adaptation combining ancient Vedic mythology with futuristic cosmic energy. When an ancient demon awakens in the Himalayas to drain the Earth’s tectonic core, a reclusive warrior discovers his celestial lineage as the son of Vayu.',
       duration: '2h 45m',
@@ -624,7 +624,7 @@ const CINEMORA_DATA = (function() {
     },
     {
       id: 'mv-03',
-      title: 'Amdavad Junction',
+      title: 'Jawan',
       tagline: 'Life is like a cup of Kadak Masala Chai: sweet, spicy, and best shared.',
       synopsis: 'Three generations of a quirky textile family in the heart of Old Ahmedabad navigate modern startups, kite-flying rivalries during Uttarayan, and unexpected romance while trying to save their heritage pol mansion from developers.',
       duration: '2h 15m',
@@ -663,7 +663,7 @@ const CINEMORA_DATA = (function() {
     },
     {
       id: 'mv-02',
-      title: 'Gulaal Nights: Mumbai 1994',
+      title: 'Stree 2: Sarkate Ka Aatank',
       tagline: 'When the monsoon flooded Bombay, the sirens drowned the bullets.',
       synopsis: 'Set across the neon-lit docks and smoke-filled jazz clubs of 1994 Mumbai, an uncompromising crime branch inspector engages in a deadly game of cat and mouse with a ruthless gold-smuggling syndicate and corrupt political power brokers.',
       duration: '2h 28m',
@@ -702,7 +702,7 @@ const CINEMORA_DATA = (function() {
     },
     {
       id: 'mv-11',
-      title: 'Chhatrapati: Battle of Sahyadri',
+      title: 'Chhaava',
       tagline: 'Not on flat fields, but amidst mountain mists was freedom won.',
       synopsis: 'A grand Maratha historical saga detailing the legendary guerrilla warfare tactics (Ganimi Kava) across the rugged forts of Raigad, Sinhagad and Pratapgad that defended the sovereignty of Swarajya against imperial invasion.',
       duration: '2h 50m',
@@ -740,7 +740,7 @@ const CINEMORA_DATA = (function() {
     },
     {
       id: 'mv-07',
-      title: 'Gold Coast Chronicles',
+      title: 'Dunki',
       tagline: 'Gold doesn’t glitter in the dark. It burns.',
       synopsis: 'A gripping period underworld saga chronicling the blood-soaked territorial wars over illicit Arabian Sea gold shipments along the Karwar and Mangaluru coast during the volatile economic transitions of the early 1980s.',
       duration: '2h 40m',
@@ -778,7 +778,7 @@ const CINEMORA_DATA = (function() {
     },
     {
       id: 'mv-06',
-      title: 'Madras Cyber Matrix',
+      title: 'Bhool Bhulaiyaa 3',
       tagline: 'They thought they could lock down the city. They forgot who wrote the code.',
       synopsis: 'In a near-future hyper-connected Chennai where water, traffic and electricity are controlled by an autonomous surveillance AI called Netra, a rogue ethical hacker squad must execute a daring digital heist to expose corrupt multinational water oligarchs.',
       duration: '2h 32m',
@@ -816,7 +816,7 @@ const CINEMORA_DATA = (function() {
     },
     {
       id: 'mv-10',
-      title: 'Punjab Da Sher: The Golden Heart',
+      title: 'Manjummel Boys',
       tagline: 'When courage enters the ring, fear steps out.',
       synopsis: 'An inspiring musical sports romance following an underdog rural wrestler from Ludhiana who takes up traditional Dangal to restore his late grandfather’s revered Akhada while discovering the healing power of love and selfless community service.',
       duration: '2h 30m',
@@ -854,7 +854,7 @@ const CINEMORA_DATA = (function() {
     },
     {
       id: 'mv-08',
-      title: 'Malabar Monsoon Mirage',
+      title: 'Leo',
       tagline: 'When the rain falls, every reflection hides a secret.',
       synopsis: 'During a torrential three-week continuous deluge in the remote hill valleys of Wayanad, a retired botanist and a young local police sub-inspector uncover decades-old unsolved disappearance cases tied to an ancient heirloom pepper plantation.',
       duration: '2h 12m',
@@ -892,7 +892,7 @@ const CINEMORA_DATA = (function() {
     },
     {
       id: 'mv-05',
-      title: 'Kaalchakra: The Quantum Paradox',
+      title: 'Singham Again',
       tagline: 'Time is not a straight line. It is a labyrinth.',
       synopsis: 'When an Indian deep-space radio observatory at Ladakh detects anomalous signals that predict airplane crashes hours before they occur, two theoretical physicists unlock a temporal wormhole that forces them to relive the same day while preventing a global catastrophe.',
       duration: '2h 20m',
@@ -930,7 +930,7 @@ const CINEMORA_DATA = (function() {
     },
     {
       id: 'mv-09',
-      title: 'The Darjeeling Whistle',
+      title: 'Salaar: Part 1 - Ceasefire',
       tagline: 'A snowbound train. Seven passengers. One bullet.',
       synopsis: 'When the heritage Darjeeling Himalayan Toy Train gets trapped midway on Batasia Loop during an unseasonal blizzard, an eccentric tea-tasting detective must solve the baffling murder of a wealthy royal collector before the train reaches Ghum station.',
       duration: '2h 05m',
@@ -967,7 +967,7 @@ const CINEMORA_DATA = (function() {
     },
     {
       id: 'mv-12',
-      title: 'Neon Horizon 2099',
+      title: 'Kantara: A Legend',
       tagline: 'Beyond humanity’s last frontier lies the light we forgot.',
       synopsis: 'In the twilight of the 21st century, humanity builds an orbital space elevator above New Mumbai. When an unknown artificial intelligence begins broadcasting ancient Vedic chants from deep within Saturn’s rings, an international crew of astronauts embarks on an irreversible expedition.',
       duration: '2h 18m',
@@ -1004,7 +1004,7 @@ const CINEMORA_DATA = (function() {
     },
     {
       id: 'mv-13',
-      title: 'Symphony of the Ghats',
+      title: 'Amaran',
       tagline: 'Seven musical notes. Five centuries of devotion. One immortal raga.',
       synopsis: 'An exquisite classical musical drama exploring the intense Guru-Shishya parampara along the moonlit riverbanks of Varanasi, where a rebellious young sitar maestro discovers that the truest music is born from surrender and humility.',
       duration: '1h 58m',
@@ -1041,7 +1041,7 @@ const CINEMORA_DATA = (function() {
     },
     {
       id: 'mv-14',
-      title: 'Shadows of Qutub',
+      title: 'Vettaiyan',
       tagline: 'When the nocturnal mist rises, the dead remember.',
       synopsis: 'During an archaeological excavation near the 800-year-old Qutub Minar complex in Mehrauli, a team unearths a sealed subterranean tomb bearing inscriptions that warn of a vengeful djinn trapped during the reign of the Delhi Sultanate.',
       duration: '2h 10m',
