@@ -1329,6 +1329,18 @@
           <p style="color:var(--text-muted);">Your digital M-Ticket has been generated and saved to your profile.</p>
         </div>
 
+        <!-- Simulated WhatsApp Live Notification Banner -->
+        <div style="background:#128C7E; color:#FFF; border-radius:12px; padding:0.85rem 1.4rem; margin-bottom:1.8rem; display:flex; align-items:center; justify-content:space-between; box-shadow:0 8px 24px rgba(18,140,126,0.25); animation:slideUp 0.4s ease;">
+          <div style="display:flex; align-items:center; gap:0.8rem;">
+            <span style="font-size:1.8rem;">💬</span>
+            <div>
+              <div style="font-weight:800; font-size:0.95rem;">WhatsApp M-Ticket Dispatched!</div>
+              <div style="font-size:0.8rem; opacity:0.95;">Sent to ${AppState.user.phone || '+91 98765 43210'} • Booking ID: #${booking.id}</div>
+            </div>
+          </div>
+          <button class="btn btn-secondary btn-sm" style="background:rgba(255,255,255,0.2); border:none; color:#FFF;" onclick="showToast('WhatsApp ticket notification resent successfully!', 'success')">Resend SMS ↗</button>
+        </div>
+
         <div class="cinema-boarding-pass">
           <div class="ticket-main-section">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
