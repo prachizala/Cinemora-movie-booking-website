@@ -1090,7 +1090,21 @@
             <div class="checkout-main-col">
               <!-- Add F&B Snacks Section with Real Photos -->
               <div class="checkout-card">
-                <h3 class="checkout-card-title">🍿 Add Gourmet In-Seat Concessions</h3>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.6rem; margin-bottom:1rem;">
+                  <h3 class="checkout-card-title" style="margin:0;">🍿 Gourmet Cinema Concessions</h3>
+                  <!-- In-Seat vs Counter Toggle -->
+                  <div style="display:flex; background:var(--surface-2); border:1px solid var(--border); border-radius:20px; padding:3px;">
+                    <button type="button" class="bot-chip active" id="fnbModeSeat" onclick="CinemoraApp.setFnbDeliveryMode('seat')" style="background:var(--gold); color:#1F1B16; font-weight:700;">
+                      🚀 Deliver to Seat at Interval
+                    </button>
+                    <button type="button" class="bot-chip" id="fnbModeCounter" onclick="CinemoraApp.setFnbDeliveryMode('counter')">
+                      🍿 Counter Pickup
+                    </button>
+                  </div>
+                </div>
+                <div id="fnbDeliveryNote" style="font-size:0.8rem; color:var(--gold-dark); background:rgba(201,162,39,0.1); border:1px dashed var(--gold); padding:0.5rem 0.8rem; border-radius:8px; margin-bottom:1rem;">
+                  ✦ <strong>In-Seat VIP Service:</strong> Concessions will be delivered hot & fresh to <strong>Seats ${draft.seats.map(s => s.label).join(', ')}</strong> during the movie intermission.
+                </div>
                 <div class="fnb-addon-grid">
                   ${CINEMORA_DATA.fnbItems.map(item => {
                     const count = draft.fnb[item.id] || 0;
@@ -2214,6 +2228,27 @@
         });
       } else {
         window.print();
+      }
+    },
+
+        setFnbDeliveryMode(mode) {
+      const seatBtn = document.getElementById('fnbModeSeat');
+      const counterBtn = document.getElementById('fnbModeCounter');
+      const note = document.getElementById('fnbDeliveryNote');
+      if (mode === 'seat') {
+        if (seatBtn) { seatBtn.style.background = 'var(--gold)'; seatBtn.style.color = '#1F1B16'; seatBtn.style.fontWeight = '700'; }
+        if (counterBtn) { counterBtn.style.background = 'transparent'; counterBtn.style.color = 'var(--text)'; counterBtn.style.fontWeight = 'normal'; }
+        if (note) {
+          note.innerHTML = '✦ <strong>In-Seat VIP Service:</strong> Concessions will be delivered hot & fresh to your reserved seats during the movie intermission.';
+        }
+        showToast('In-Seat Delivery at Intermission Selected!', 'success');
+      } else {
+        if (counterBtn) { counterBtn.style.background = 'var(--gold)'; counterBtn.style.color = '#1F1B16'; counterBtn.style.fontWeight = '700'; }
+        if (seatBtn) { seatBtn.style.background = 'transparent'; seatBtn.style.color = 'var(--text)'; seatBtn.style.fontWeight = 'normal'; }
+        if (note) {
+          note.innerHTML = '✦ <strong>Express Counter Pickup:</strong> Skip the long queue! Show your M-Ticket barcode directly at the Audi 2 Cinemora Express Food Counter.';
+        }
+        showToast('Express Counter Pickup Selected!', 'info');
       }
     },
 
