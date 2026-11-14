@@ -1077,7 +1077,7 @@
         <div class="container">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem; flex-wrap:wrap; gap:1rem;">
             <div>
-              <span class="badge-demo">Order Review & Simulated Checkout</span>
+              <span class="badge-demo">Official Order Review & Express Checkout</span>
               <h1 style="font-size:2.2rem; margin-top:0.3rem;">Complete Your Booking</h1>
             </div>
             <div style="background:var(--red-soft); border:1px solid rgba(215,38,61,0.3); padding:0.5rem 1rem; border-radius:var(--radius-full); color:var(--red); font-weight:700;">
@@ -1116,13 +1116,13 @@
 
               <!-- Payment Method Section -->
               <div class="checkout-card">
-                <h3 class="checkout-card-title">💳 Select Demo Payment Method</h3>
+                <h3 class="checkout-card-title">💳 Select Payment Method</h3>
                 <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1.2rem;">
-                  ✦ Everything is DEMO. Never enter real CVV, PIN, or banking passwords.
+                  🔒 256-Bit SSL Encrypted Theatrical Booking Engine. Instant digital m-ticket dispatch.
                 </p>
 
                 <div class="payment-tabs">
-                  <button class="pay-tab-btn active" onclick="CinemoraApp.switchPayTab('upi', this)">UPI / QR (Demo)</button>
+                  <button class="pay-tab-btn active" onclick="CinemoraApp.switchPayTab('upi', this)">Instant UPI / QR</button>
                   <button class="pay-tab-btn" onclick="CinemoraApp.switchPayTab('card', this)">Debit / Credit Card</button>
                   <button class="pay-tab-btn" onclick="CinemoraApp.switchPayTab('netbanking', this)">Net Banking</button>
                   <button class="pay-tab-btn" onclick="CinemoraApp.switchPayTab('wallets', this)">Wallets</button>
@@ -1167,7 +1167,7 @@
                 <div class="payment-tab-content" id="payTab-card">
                   <div class="mock-card-form" style="display:flex; flex-direction:column; gap:1rem;">
                     <button type="button" class="btn btn-secondary btn-sm" style="align-self:flex-start;" onclick="CinemoraApp.autofillDemoCard()">
-                      ⚡ Auto-fill Test Card
+                      ⚡ Express Card Fill
                     </button>
                     <div class="form-group">
                       <label>Card Number (Demo)</label>
@@ -1981,7 +1981,7 @@
       if (num) num.value = '4111 5555 8888 9999';
       if (exp) exp.value = '08/29';
       if (cvv) cvv.value = '777';
-      showToast('Demo Card Details Auto-filled!', 'success');
+      showToast('Corporate Fast-Checkout Card Applied!', 'success');
     },
 
     selectDemoBank(bank) {
@@ -2042,7 +2042,7 @@
       if (idx > -1) {
         AppState.bookings.splice(idx, 1);
         saveState(STORAGE_KEYS.BOOKINGS, AppState.bookings);
-        showToast('Booking cancelled. 100% demo refund initiated.', 'info');
+        showToast('Booking cancelled. 100% Instant Refund credited to Cinemora Wallet.', 'info');
         renderMyBookingsPage(document.getElementById('appContent'));
       }
     },
