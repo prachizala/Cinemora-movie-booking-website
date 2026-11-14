@@ -900,7 +900,8 @@
               <path d="M 20 40 Q 250 8 480 40" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" filter="drop-shadow(0 0 10px #38BDF8)" />
               <path d="M 20 40 Q 250 8 480 40 L 460 50 Q 250 20 40 50 Z" fill="url(#screenBeam)" />
             </svg>
-            <div class="screen-caption">✦ ALL EYES THIS WAY • AUDITORIUM SCREEN ✦</div>
+            <div class="screen-caption">✦ ALL EYES THIS WAY • 70FT 4K LASER CURVED SCREEN ✦</div>
+            <div id="seatViewSimulatorBar" style="margin-top:0.6rem; font-size:0.82rem; color:#38BDF8; font-weight:700;">👁️ Live Sightline: Click any seat below to test your exact screen viewing angle</div>
           </div>
 
           <!-- Seat Map: ON LIGHT PANEL (Requirement A) -->
@@ -1892,6 +1893,11 @@
 
         btn.classList.add('selected');
         btn.setAttribute('aria-pressed', 'true');
+        const simBar = document.getElementById('seatViewSimulatorBar');
+        if (simBar) {
+          const perspective = (row <= 'C') ? '📐 Front Rows: Immersive Ground Perspective' : (row <= 'F' ? '🎯 Prime Center: Optimal Eye-Level Acoustic Sweet Spot' : '👑 Elevated VIP Tier: Panoramic 180° Clear Sightline over whole hall');
+          simBar.innerHTML = '👁️ <strong>Seat ' + label + ' Sightline:</strong> ' + perspective;
+        }
       }
 
       const container = document.getElementById('selectedSeatsContainer');
