@@ -52,6 +52,40 @@ export async function fetchLiveIndianTheatricalMovies(apiKey = process.env.TMDB_
       const criticRating = (m.vote_average ? m.vote_average.toFixed(1) : '8.4');
       const publicRating = (Math.min(9.8, parseFloat(criticRating) + 0.3)).toFixed(1);
 
+      let realCast = [
+        { name: 'Lead Performer', role: 'Main Lead', photo: null },
+        { name: 'Supporting Performer', role: 'Key Character', photo: null }
+      ];
+      let realDirector = 'Renowned Filmmaker';
+      let ytTrailerKey = 'JNJ6luyhR2I';
+
+      try {
+        const [credRes, vidRes] = await Promise.all([
+          fetch(`${TMDB_API_BASE}/movie/${m.id}/credits?api_key=${apiKey}`),
+          fetch(`${TMDB_API_BASE}/movie/${m.id}/videos?api_key=${apiKey}`)
+        ]);
+
+        if (credRes.ok) {
+          const credData = await credRes.json();
+          if (credData.cast && credData.cast.length > 0) {
+            realCast = credData.cast.slice(0, 5).map(c => ({
+              name: c.name,
+              role: c.character || 'Star Cast',
+              photo: c.profile_path ? `https://image.tmdb.org/t/p/w185${c.profile_path}` : null
+            }));
+          }
+          const dirObj = (credData.crew || []).find(c => c.job === 'Director');
+          if (dirObj) realDirector = dirObj.name;
+        }
+
+        if (vidRes.ok) {
+          const vidData = await vidRes.json();
+          const videos = vidData.results || [];
+          const trailer = videos.find(v => v.site === 'YouTube' && (v.type === 'Trailer' || v.type === 'Teaser')) || videos.find(v => v.site === 'YouTube');
+          if (trailer && trailer.key) ytTrailerKey = trailer.key;
+        }
+      } catch (err) {}
+
       return {
         id: `tmdb-${m.id}`,
         tmdbId: m.id,
@@ -70,16 +104,12 @@ export async function fetchLiveIndianTheatricalMovies(apiKey = process.env.TMDB_
         backdropPath: backdropUrl,
         tagline: m.overview ? m.overview.slice(0, 60) + '...' : 'An unmissable cinematic spectacle.',
         synopsis: m.overview || 'Experience this monumental theatrical release with unprecedented sound and visuals in CINEMORA luxury auditoriums.',
-        director: 'Acclaimed Filmmaker',
-        cast: [
-          { name: 'Lead Actor', role: 'Protagonist' },
-          { name: 'Co-Star', role: 'Crucial Role' },
-          { name: 'Supporting Star', role: 'Key Character' }
-        ],
+        director: realDirector,
+        cast: realCast,
         isTrending: index < 5,
         isPopular: index >= 5 && index < 10,
         formats: ['IMAX Laser 3D', '4DX', 'Dolby Atmos', 'Director Suite'],
-        trailerYoutubeKey: 'JNJ6luyhR2I'
+        trailerYoutubeKey: ytTrailerKey
       };
     }));
 
