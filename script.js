@@ -2231,7 +2231,79 @@
       }
     },
 
-        setFnbDeliveryMode(mode) {
+            openPaymentGatewayModal(totalPaid) {
+      const activeTab = document.querySelector('.pay-tab-btn.active')?.textContent || 'UPI';
+      
+      const modal = document.createElement('div');
+      modal.className = 'modal-overlay active';
+      modal.id = 'paymentGatewayModal';
+      modal.style.zIndex = '9999';
+
+      modal.innerHTML = `
+        <div class="modal-card" style="max-width:440px; background:var(--surface); border:1.5px solid var(--gold); border-radius:16px; padding:0; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,0.4);">
+          <!-- Gateway Header -->
+          <div style="background:#1F1B16; padding:1.2rem 1.5rem; color:#FFF; display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid var(--gold);">
+            <div>
+              <div style="font-size:0.75rem; color:var(--gold-light); font-weight:700; letter-spacing:0.06em;">CINEMORA PAY GATEWAY</div>
+              <div style="font-size:1.2rem; font-weight:800; margin-top:2px;">Amount: ${formatCurrency(totalPaid)}</div>
+            </div>
+            <button onclick="document.getElementById('paymentGatewayModal').remove()" style="background:none; border:none; color:#FFF; font-size:1.4rem; cursor:pointer;">✕</button>
+          </div>
+
+          <!-- Gateway Body -->
+          <div style="padding:1.5rem; text-align:center;">
+            <div style="width:54px; height:54px; border-radius:50%; background:rgba(46,158,106,0.15); color:var(--green); font-size:1.8rem; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem;">
+              🔒
+            </div>
+
+            <h4 style="font-size:1.1rem; color:var(--text); margin-bottom:0.4rem;">Authorize Theatrical Booking</h4>
+            <p style="font-size:0.82rem; color:var(--text-muted); margin-bottom:1.4rem;">
+              Simulating secure bank authentication with your payment provider.
+            </p>
+
+            <div style="background:var(--surface-2); border:1px solid var(--border); border-radius:12px; padding:1rem; margin-bottom:1.4rem; text-align:left;">
+              <div style="display:flex; justify-content:space-between; font-size:0.82rem; margin-bottom:0.4rem;">
+                <span style="color:var(--text-muted);">Merchant:</span>
+                <strong>Cinemora Multiplex Ltd</strong>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:0.82rem; margin-bottom:0.4rem;">
+                <span style="color:var(--text-muted);">Payment Method:</span>
+                <span style="color:var(--gold-dark); font-weight:700;">${activeTab}</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:0.82rem;">
+                <span style="color:var(--text-muted);">Phone / VPA:</span>
+                <span>${AppState.user.phone || '+91 98765 43210'}</span>
+              </div>
+            </div>
+
+            <!-- OTP input box -->
+            <div style="margin-bottom:1.5rem;">
+              <label style="display:block; font-size:0.8rem; font-weight:700; color:var(--text); margin-bottom:0.5rem;">
+                Enter 4-Digit Banking OTP
+              </label>
+              <input type="text" id="mockOtpInput" maxlength="4" value="7842" style="width:140px; text-align:center; font-size:1.5rem; font-family:monospace; letter-spacing:0.4em; padding:0.5rem; border:2px solid var(--gold); border-radius:8px; background:var(--surface);" autofocus>
+              <div style="font-size:0.75rem; color:var(--green); margin-top:0.4rem; font-weight:600;">
+                ✓ Auto-filled Fast Verification OTP
+              </div>
+            </div>
+
+            <button class="btn btn-primary" style="width:100%; padding:0.8rem; font-size:1rem; font-weight:800;" onclick="CinemoraApp.finalizeGatewayPayment(${totalPaid})">
+              Confirm & Issue M-Ticket 🎟️
+            </button>
+          </div>
+        </div>
+      `;
+
+      document.body.appendChild(modal);
+    },
+
+    finalizeGatewayPayment(totalPaid) {
+      const modal = document.getElementById('paymentGatewayModal');
+      if (modal) modal.remove();
+      this.confirmBookingPayment(totalPaid);
+    },
+
+    setFnbDeliveryMode(mode) {
       const seatBtn = document.getElementById('fnbModeSeat');
       const counterBtn = document.getElementById('fnbModeCounter');
       const note = document.getElementById('fnbDeliveryNote');
